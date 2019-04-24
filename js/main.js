@@ -2,9 +2,13 @@ $(document).ready(function(){
  $('.header').height($(window).height());
 })
 
-$(".navbar a").click(function(){
-    $("body,html").animate({
-        scrollTop:$("#" + $(this).data('value')).offset().top
-    },1000)
+// Implement smooth scrolling on navigation bar anchor click
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
-})
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});

@@ -8,6 +8,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
 
     <title>Hello, world!</title>
   </head>
@@ -15,164 +18,79 @@
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">Home</a>
+        <a class="navbar-brand" href="#home">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#about" data-value="about">About</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#education" data-value="education">Education</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio" data-value="portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#blog" data-value="post">Blog</a>
+              <a class="nav-link" href="#project" data-value="project">Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
-            
+
           </ul>
         </div>
       </nav>            <!-- Navigation Bar End -->
 
 
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="home">
         <div class="overlay"></div>
         <div class="container">
             <div class="description">
-                <h1>Welcome to my website</h1>
+                <h1>Christian Benitez</h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque hendrerit porta. Duis dictum volutpat sapien, ac ultrices arcu sagittis in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor leo in urna auctor, a ultrices odio volutpat.
+                    I’m am currently a 4th year pursuing a <span class="shadow">Bachelor’s of Science</span> in <span class="shadow">Electrical Engineering</span> at the <span class="shadow">University of California, San Diego</span> with an expected graduation in <span class="shadow">June 2019</span>.
+                    I am currently looking for new opportunities that will challenge me to advance my career as a <span class="shadow">software developer</span> and to make a positive impact on this world.
                 </p>
-                <button type="button" class="btn btn-warning">See More</button>
+                <i class="fas fa-2x fa-envelope-square" href="mailto:christian.p.benitez@gmail.com"></i>
+                <i class="fab fa-2x fa-linkedin" href="https://www.linkedin.com/in/christian-p-benitez/"></i>
+                <i class="fab fa-2x fa-github-square" href="https://github.com/cpbenite"></i>
+
             </div>
-            
+
         </div>
     </header> <!-- Header End -->
 
-    <!-- About Me -->
 
-    <div class="row about" id="about">
-        <div class="col-lg-4 col-md-4 col-sm-12">
-            <img src="images/me2.jpg" class="img-fluid">
-            <span class="text-justify">Jr. Web Developer</span>
+    <div class="education" id="education">
+      <h1 class="text-center">Education</h1>
+      <div class="container">
+        <div class="resume-section">
+          <h3>University of California, San Diego</h3>
+          <h5>Pursuing Bachelor's of Science in Electrical Engineering</h5>
+          <p>2015 - 2019</p>
+          <p>Relevant Coursework: Introduction to Programming, Introduction to Product Engineering, Product Marketing & Management</p>
         </div>
-        <div class="col-lg-8 col-md-8 col-sm-12 desc">
-            <h3>C. Benitez</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend volutpat eros vitae elementum. Suspendisse consequat aliquam dolor, non pulvinar erat suscipit ac. Nunc iaculis, sapien at dictum venenatis, arcu dui dapibus nisl, in condimentum quam justo nec mauris. Maecenas pulvinar luctus convallis. Pellentesque in metus sed ante fermentum auctor quis non est. Fusce a sapien maximus, ultricies quam in, pellentesque elit. Donec non porttitor lorem. Quisque efficitur velit ac augue fringilla bibendum. Integer ac nibh tellus. Morbi posuere id leo et efficitur. Fusce ullamcorper vulputate egestas. Pellentesque egestas sit amet quam ut molestie. Mauris iaculis nisi velit, at aliquam mauris faucibus quis.</p>
+        <div class="resume-section">
+          <h3>FreeCodeCamp</h3>
+          <h5>Responsive Web Design Certification (300 Hours)</h5>
+          <p>2018 - Ongoing</p>
+          <p>Relevant Coursework: HTML, CSS, Responsive Web Design, Basic/Intermediate Algorithm Scripting</p>
         </div>
-    </div>      <!-- About Me End-->
-
-    <!-- Portfolio -->
-
-    <div class="portfolio" id="portfolio">
-        <h1 class="text-center">Portfolio</h1>
-
-        <!-- 3 x 3 Fluid Image Container -->
-
-        <div class="container">
-            <!-- Row 1 -->
-            <div class="row">
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                    <img src="images/Lers.jpg" class="img-fluid">
-                </div>
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                    <img src="images/SF.jpg" class="img-fluid">
-                </div>
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                    <img src="images/Pam.jpg" class="img-fluid">
-                </div>
-            </div>
-
-            <!-- Row 2 -->
-            <div class="row">
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                    <img src="images/Hawaii.jpg" class="img-fluid">
-                </div>
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                    <img src="images/me.jpg" class="img-fluid">
-                </div>
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                    <img src="images/Seattle.jpg" class="img-fluid">
-                </div>
-            </div>
-
-            <!-- Row 3 -->
-            <div class="row">
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                    <img src="images/Cam.jpg" class="img-fluid">
-                </div>
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                    <img src="images/SD.jpg" class="img-fluid">
-                </div>
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                    <img src="images/lol.jpg" class="img-fluid">
-                </div>
-            </div>
-
-        </div>
-    </div>      <!-- Portfolio End -->
-
-    <!-- Blog Posts
-
-    <div class="blog">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                    <div class="card border-success mb-3" style="max-width: 18rem;">
-                        <div class="card-header bg-transparent border-success">Header</div>
-                        <div class="card-body text-success">
-                            <h5 class="card-title">Success card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                        <div class="card-footer bg-transparent border-success">Footer</div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                    <div class="card border-success mb-3" style="max-width: 18rem;">
-                        <div class="card-header bg-transparent border-success">Header</div>
-                        <div class="card-body text-success">
-                            <h5 class="card-title">Success card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                        <div class="card-footer bg-transparent border-success">Footer</div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                    <div class="card border-success mb-3" style="max-width: 18rem;">
-                        <div class="card-header bg-transparent border-success">Header</div>
-                        <div class="card-body text-success">
-                            <h5 class="card-title">Success card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                        <div class="card-footer bg-transparent border-success">Footer</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
 
-    -->
-
-    <div class="blog" id="blog">
+    <div class="project" id="project">
         <div class="container">
-        <h1 class="text-center">Blog</h1>
+        <h1 class="text-center">Projects</h1>
             <div class="row">
                 <div class="col-md-4 col-lg-4 col-sm-12">
                     <div class="card">
                         <div class="card-img">
                             <img src="images/Eugene.jpg" class="img-fluid">
-                        </div>  
+                        </div>
                         <div class="card-body">
-                        <h4 class="card-title">College</h4>
+                        <h4 class="card-title">Smart WheelChair</h4>
                             <p class="card-text">
-                            
-                                A time of discovery.
+                              A low cost, autonomous-solution to the powered wheelchair market.
                             </p>
                         </div>
                         <div class="card-footer">
@@ -185,12 +103,11 @@
                     <div class="card">
                         <div class="card-img">
                             <img src="images/Reg.jpg" class="img-fluid">
-                        </div>  
+                        </div>
                         <div class="card-body">
-                        <h4 class="card-title">High School</h4>
+                        <h4 class="card-title">USB Power Supply</h4>
                             <p class="card-text">
-                            
-                                A time of innocence.
+                              Designed and simulated a USB Power Supply using PSIM.
                             </p>
                         </div>
                         <div class="card-footer">
@@ -203,12 +120,11 @@
                     <div class="card">
                         <div class="card-img">
                             <img src="images/Flowers.jpg" class="img-fluid">
-                        </div>  
+                        </div>
                         <div class="card-body">
-                        <h4 class="card-title">Hawaii</h4>
+                        <h4 class="card-title">Line Follower Robot</h4>
                             <p class="card-text">
-                            
-                                A time for paradise.
+                              Typical end-of-the-year project fam.
                             </p>
                         </div>
                         <div class="card-footer">
@@ -226,7 +142,7 @@
             <form>
                 <div class="row">
                     <div class="col-sm-12 col-md-4 col-lg-4">
-                        <h1>Get in Touch</h1>
+                        <h1>Connect with me!</h1>
                     </div>
                     <div class="col-sm-12 col-md-8 col-lg-8">
                         <div class="form-group">
@@ -238,7 +154,7 @@
                             <input type="text" class="form-control" id="formGroupExampleInput" placeholder="YourName@email.com">
                         </div>
                         <div class="form-group">
-                            
+
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                         <input type="submit" class="btn btn-warning btn-block" value="Send" name="">
@@ -253,7 +169,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  
+
     <!-- Personal Javascript tags -->
     <script type="text/javascript" src='js/main.js'></script>
 
